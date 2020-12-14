@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="주문하시겠습니까?"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시작함" />
+
+    <TextView
+        android:id="@+id/menuTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="메뉴"
+        android:visibility="invisible"/>
+
+    <RadioGroup
+        android:id="@+id/rGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/americano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아메리카노"/>
+
+        <RadioButton
+            android:id="@+id/latte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="카페라떼"/>
+
+        <RadioButton
+            android:id="@+id/cappu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="카푸치노"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="매장검색"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/storeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"/>
+
+
+    <Button
+        android:id="@+id/reserveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예약하기(당일예약)"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/reserveTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:timePickerMode="spinner" />
+
+</LinearLayout>
